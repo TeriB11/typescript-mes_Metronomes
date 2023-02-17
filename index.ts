@@ -15,7 +15,7 @@ RunOscillatorDemo(document.getElementById('app')!, {
   borderColor: Color.grey(0.2),
   borderThickness: 0,
 
-  layout: 'circle', // can be 'circle' or 'line' or 'closedCircle'
+  layout: 'line', // can be 'circle' or 'line' or 'closedCircle'
 
   oscillatorDrawRadius: 4,
   oscillatorDrawBorderRadius: 1,
