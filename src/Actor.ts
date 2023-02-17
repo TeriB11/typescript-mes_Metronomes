@@ -26,7 +26,7 @@ export class SineOscillator {
         Math.sin((2 * Math.PI * t) / periodSeconds + (phaseSeconds ?? 0)) +
       (offset ?? 0);
 
-    return decayFactor ? x * Math.exp(-decayFactor * t) : x;
+    return decayFactor ? x * Math.exp(-decayFactor * t) : x; //exp decay factor
   }
 }
 
