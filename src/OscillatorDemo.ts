@@ -48,7 +48,7 @@ export function RunOscillatorDemo(element: HTMLElement, config: DemoConfig) {
         //unit y vec
         ray = new Vec2(1, 0);
       }
-//The closed circle appears to be split into two sets of oscillators with the decayIndex
+//The closed circle appears to be split into two sets of mirrored oscillators with the decayIndex
       const decayIndex =
         config.layout === 'closedCircle'
           ? (config.oscillatorCount / 2) *
