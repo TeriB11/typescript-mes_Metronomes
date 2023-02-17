@@ -58,6 +58,7 @@ export function RunOscillatorDemo(element: HTMLElement, config: DemoConfig) {
       const freq = decayIndex / (config.periodSeconds * config.oscillatorCount);
       const period = 1 / freq;
 //*****************************************************************************figure out the line/cylindrical stuff now */
+//Next is determine if render area is a square, get the angle, X, Y for the coordinates to place the circle.  
       const projectOntoSquare = false;
       const ang = ray.normalized().polarAngleRad();
       const amplitudeX = Math.abs(Math.cos(ang));
@@ -81,7 +82,6 @@ export function RunOscillatorDemo(element: HTMLElement, config: DemoConfig) {
       );
     }
   );
-
   canvas.runRenderLoop(
     1000 / 60,
     (deltaTime, absoluteTime) => {
