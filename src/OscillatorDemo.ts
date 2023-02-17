@@ -40,6 +40,7 @@ export function RunOscillatorDemo(element: HTMLElement, config: DemoConfig) {
       let ray = Vec2.polar(2 * Math.PI * iterFraction);
 
       if (config.layout === 'line') {
+        //fraction of cylinder height to position this oscillator
         const yOffset =
           config.oscillatorDrawRadius +
           iterFraction * (canvas.height - 2 * config.oscillatorDrawRadius);
