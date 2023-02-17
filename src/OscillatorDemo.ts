@@ -45,6 +45,7 @@ export function RunOscillatorDemo(element: HTMLElement, config: DemoConfig) {
           config.oscillatorDrawRadius +
           iterFraction * (canvas.height - 2 * config.oscillatorDrawRadius);
         origin = new Vec2(canvas.width / 2, yOffset);
+        //unit y vec
         ray = new Vec2(1, 0);
       }
 
