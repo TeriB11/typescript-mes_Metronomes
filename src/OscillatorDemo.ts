@@ -58,7 +58,7 @@ export function RunOscillatorDemo(element: HTMLElement, config: DemoConfig) {
       const freq = decayIndex / (config.periodSeconds * config.oscillatorCount);
       const period = 1 / freq;
 //*****************************************************************************figure out the line/cylindrical stuff now */
-//Next is determine if render area is a square, get the angle, X, Y for the coordinates to place the circle.  
+//Next is determine if render area is a square, get the angle, X, Y for the coordinates to place the circle.  below consts not needed if projecting onto a square(?)
       const projectOntoSquare = false;
       const ang = ray.normalized().polarAngleRad();
       const amplitudeX = Math.abs(Math.cos(ang));
